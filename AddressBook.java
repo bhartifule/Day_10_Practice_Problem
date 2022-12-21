@@ -3,6 +3,8 @@ package com.bridglabz;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.bridglabz.Contact;
+
 public class AddressBook {
     ArrayList<Contact> contactList = new ArrayList<>();
 
@@ -64,4 +66,19 @@ public void editContact() {
 }
 
 
+public void deleteContact() {
+	// TODO Auto-generated method stub
+	 Scanner sc = new Scanner(System.in);
+     System.out.print("Enter first name:");
+     String name = sc.next();
+     for (Contact contactPerson : contactList) {
+         if (name.equals(contactPerson.getFirstName())) {
+             contactList.remove(contactPerson);
+             break;
+         }
+
+     }
+ }
 }
+
+
