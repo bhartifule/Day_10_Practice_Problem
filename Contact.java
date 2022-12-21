@@ -21,6 +21,10 @@ public class Contact {
 		this.Email = Email;
 	}
 	
+	public Contact() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getFirstName() {
 		return FirstName;
 	}
