@@ -35,4 +35,33 @@ public String toString() {
 }
 
 
+public void editContact() {
+	Scanner sc = new Scanner(System.in);
+    System.out.print("Enter first name:");
+    String name = sc.next();
+    for (Contact contactPerson : contactList) {
+        if (name.equals(contactPerson.getFirstName())) {
+            System.out.println("Set Details");
+            System.out.print("Enter first name:");
+            contactPerson.setFirstName(sc.next());
+            System.out.print("Enter Last name:");
+            contactPerson.setLastName(sc.next());
+            System.out.println("Enter the Address : ");
+            contactPerson.setAddress(sc.next());
+            System.out.println("Enter the City : ");
+            contactPerson.setCity(sc.next());
+            System.out.println("Enter the State : ");
+            contactPerson.setState(sc.next());
+            System.out.println("Enter the ZipCode : ");
+            contactPerson.setZipCode(sc.nextInt());
+            System.out.println("Enter the Mobile no : ");
+            contactPerson.setPhoneNo(sc.nextInt());
+            break;
+        }
+        
+    }
+	
+}
+
+
 }

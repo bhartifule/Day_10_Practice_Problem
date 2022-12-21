@@ -9,5 +9,8 @@ public static void main(String[] args) {
 
 	familyAdreesBook.addContact();
 	System.out.println(familyAdreesBook);
+	familyAdreesBook.editContact();
+	System.out.println(familyAdreesBook);
+
 }
 }
